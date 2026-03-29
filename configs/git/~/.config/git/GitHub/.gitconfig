@@ -1,0 +1,15 @@
+[user]
+  email = developer@karacayir.com
+  signingKey = ~/.ssh/keys/ek_git_signing_key.pub
+
+[core]
+  excludesFile = ~/.gitignore_global
+
+[gpg]
+  format = ssh
+
+[commit]
+  gpgSign = true
+
+[tag]
+  gpgSign = true

@@ -1,0 +1,11 @@
+[user]
+  name = Emrecan Karaçayır
+
+[init]
+  defaultBranch = main
+
+[includeIf "gitdir:~/Developer/External/github.com/"]
+  path = ~/.config/git/GitHub/.gitconfig
+
+[ghq]
+  root = ~/Developer/External/
