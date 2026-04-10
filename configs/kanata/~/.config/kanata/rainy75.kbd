@@ -1,0 +1,107 @@
+(defcfg
+  process-unmapped-keys no
+  delegate-to-first-layer yes
+
+  macos-dev-names-include (
+    "Rainy 75"
+    "Rainy 75-1"
+    "Rainy 75-2"
+    "Rainy 75-3"
+  )
+)
+
+(defalias
+  ;; [KEY] Edit
+  ;;   - {hld} : Enable Edit Layer
+  edt (layer-while-held edit)
+
+  ;; [KEY] Hyper
+  ;;   - {tap} : Ctl + Opt + Sft + Cmd
+  hyp (multi ctl alt sft met)
+
+  ;; [ACTION] Close / Quit
+  ;;   - {tap}       : Close Window
+  ;;   - Sft + {tap} : Quit Application
+  _cq (fork (multi met w) (unmod (sft) met q) (sft))
+
+  ;; [KEY] Close / Quit / Lock
+  ;;   - {tap}       : Close Window
+  ;;   - Sft + {tap} : Quit Application
+  ;;   - Opt + {tap} : Lock Screen
+  cql (fork @_cq (unmod (alt) ctl met q) (alt))
+
+  ;; [ACTION] Minimize / Hide
+  ;;   - {tap}       : Minimize Window
+  ;;   - Sft + {tap} : Hide Application
+  _mh (fork (multi @hyp m) (unmod (sft) met h) (sft))
+
+  ;; [KEY] Minimize / Hide / Desktop
+  ;;   - {tap}       : Minimize Window
+  ;;   - Sft + {tap} : Hide Application
+  ;;   - Opt + {tap} : Show Desktop
+  mhd (fork @_mh (multi @hyp d) (alt))
+
+  ;; [ACTION] Zoom / Fill
+  ;;   - {tap}       : Zoom Window
+  ;;   - Sft + {tap} : Fill Window
+  _zf (fork (multi @hyp z) (unmod (sft) ctl fn f) (sft))
+
+  ;; [KEY] Zoom / Fill / Full
+  ;;   - {tap}       : Zoom Window
+  ;;   - Sft + {tap} : Fill Window
+  ;;   - Opt + {tap} : Full Screen
+  zff (fork @_zf (unmod (alt) fn f) (alt))
+
+  ;; [ACTION] Volume
+  ;;   - {tap}       : Volume Up
+  ;;   - Sft + {tap} : Volume Down
+  _vl (fork volu (unmod (sft) vold) (sft))
+
+  ;; [ACTION] Brightness
+  ;;   - {tap}       : Brightness Up
+  ;;   - Sft + {tap} : Brightness Down
+  _br (fork (unmod (alt) brup) (unmod (alt sft) brdn) (sft))
+
+  ;; [ACTION] Media
+  ;;   - {tap}    : Play/Pause
+  ;;   - {tap:x2} : Next Track
+  ;;   - {tap:x3} : Previous Track
+  _md (tap-dance 200 ((unmod (ctl) pp) (unmod (ctl) next) (unmod (ctl) prev)))
+
+  ;; [KEY] Volume / Brightness / Media
+  ;;   - {tap}             : Volume Up
+  ;;   - Sft + {tap}       : Volume Down
+  ;;   - Opt + {tap}       : Brightness Up
+  ;;   - Opt + Sft + {tap} : Brightness Down
+  ;;   - Ctl + {tap}       : Play/Pause
+  ;;   - Ctl + {tap:x2}    : Next Track
+  ;;   - Ctl + {tap:x3}    : Previous Track
+  vbm (fork (fork @_vl @_br (alt)) @_md (ctl))
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  del  home
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc end
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \    pgup
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret       pgdn
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft      up
+  lctl lmet lalt           spc                 menu rctl      left down rght
+)
+
+(deflayer base
+  _    _    _    _    _    _    _    _    _    _    _    _    _    f13  @vbm
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    @cql
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    @mhd
+  @edt _    _    _    _    _    _    _    _    _    _    _    _         @zff
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    lalt lmet           _                   _    @hyp      _    _    _
+)
+
+(deflayer edit
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    pgup _    _    home up   end  _    esc  _    _    _
+  _    _    _    _    pgdn _    bspc left down rght ret  _    _         _
+  _    _    _    _    _    _    _    _    _    _    _    _         _
+  _    _    _              _                   _    _         _    _    _
+)

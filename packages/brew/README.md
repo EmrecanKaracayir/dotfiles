@@ -8,7 +8,6 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 
 - `bat`
 - `cloc`
-- `cocoapods`
 - `eza`
 - `fd`
 - `ffmpeg`
@@ -16,9 +15,11 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 - `fzf`
 - `ghq`
 - `git`
+- `kanata`
 - `lazygit`
 - `neovim`
 - `node`
+- `ruby`
 - `starship`
 - `tree-sitter-cli`
 - `watchman`
@@ -44,6 +45,7 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 - `microsoft-word`
 - `notion`
 - `reactotron`
+- `spotify`
 - `visual-studio-code`
 - `windows-app`
 - `zulu@17`
