@@ -43,8 +43,10 @@ Use this as the LaunchDaemon that activates the VirtualHIDDevice driver.
 - Calls the VirtualHIDDevice Manager with `activate` at boot.
 - Needed once per boot so the driver is ready before Kanata starts.
 
-## Important Note
+## Important Notes
 
 Kanata on macOS depends on [Karabiner-DriverKit-VirtualHIDDevice](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice). Install it before loading the LaunchDaemons above.
 
 The LaunchDaemon files live under `/Library/LaunchDaemons/` and must be owned by `root:wheel` to load with `launchctl`.
+
+After installing, the Karabiner DriverKit system extension requires manual approval. Go to **System Settings > General > Login Items & Extensions > Driver Extensions** and enable the Karabiner DriverKit VirtualHIDDevice entry. If the entry does not appear, run the VirtualHIDDevice Manager once manually, then enable the driver extension from System Settings. Without this approval, the extension stays in `activated waiting for user` state and Kanata will fail with `Karabiner-VirtualHIDDevice driver is not activated`.
