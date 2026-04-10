@@ -1,0 +1,27 @@
+*
+
+# >-----< INCLUDES >-----< #
+
+# [+]: Git files
+!.gitignore
+
+# [+]: Repo files
+!LICENSE.md
+!README.md
+
+# [+]: Configs folder
+!configs/
+!configs/**
+
+# [+]: Packages folder
+!packages/
+!packages/**
+
+# [+]: Config files
+!.editorconfig
+
+# >-----< EXCLUDES >-----< #
+
+# [-]: macOS files
+.DS_Store
+**/.DS_Store

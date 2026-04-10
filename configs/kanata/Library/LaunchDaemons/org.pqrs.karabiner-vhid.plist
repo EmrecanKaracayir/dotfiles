@@ -4,10 +4,14 @@
 <dict>
     <key>Label</key>
     <string>org.pqrs.karabiner-vhid</string>
+
     <key>ProgramArguments</key>
     <array>
         <string>/Library/Application Support/org.pqrs/Karabiner-DriverKit-VirtualHIDDevice/Applications/Karabiner-VirtualHIDDevice-Daemon.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Daemon</string>
     </array>
+
+    <key>ProcessType</key>
+    <string>Interactive</string>
 
     <key>RunAtLoad</key>
     <true/>

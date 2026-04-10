@@ -4,6 +4,7 @@
 <dict>
     <key>Label</key>
     <string>org.pqrs.karabiner-vhid-activator</string>
+    
     <key>ProgramArguments</key>
     <array>
         <string>/Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager</string>
