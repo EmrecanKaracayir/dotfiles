@@ -23,6 +23,6 @@
     <string>/Library/Logs/com.karacayir.kanata/out.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Library/Logs/com.karacayir.kanata/err.log</string>
+    <string>/Library/Logs/com.karacayir.kanata/error.log</string>
 </dict>
 </plist>

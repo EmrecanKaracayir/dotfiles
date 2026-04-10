@@ -14,5 +14,11 @@
 
     <key>KeepAlive</key>
     <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Library/Logs/org.pqrs.karabiner/vhid.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Library/Logs/org.pqrs.karabiner/vhid.error.log</string>
 </dict>
 </plist>
