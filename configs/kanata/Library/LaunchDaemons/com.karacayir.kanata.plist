@@ -10,6 +10,7 @@
         <string>/opt/homebrew/bin/kanata</string>
         <string>--cfg</string>
         <string>/Users/Emrecan/.config/kanata/rainy75.kbd</string>
+        <string>--no-wait</string>
         <string>--quiet</string>
     </array>
 
