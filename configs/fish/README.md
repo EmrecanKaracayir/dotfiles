@@ -1,4 +1,4 @@
-# Fish Config Layout
+# Fish Configs
 
 This folder documents the standard Fish config layout in a simple way.
 

@@ -1,4 +1,4 @@
-# Ghostty Config Layout
+# Ghostty Configs
 
 This folder documents a simple Ghostty config layout.
 

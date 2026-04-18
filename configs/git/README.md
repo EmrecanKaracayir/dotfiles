@@ -1,4 +1,4 @@
-# Git Config Layout
+# Git Configs
 
 This folder documents a simple Git config layout.
 

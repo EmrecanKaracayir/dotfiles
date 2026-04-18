@@ -1,4 +1,4 @@
-# Kanata Config Layout
+# Kanata Configs
 
 This folder documents a simple Kanata config layout for macOS.
 

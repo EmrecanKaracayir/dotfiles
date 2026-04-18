@@ -1,6 +1,6 @@
 *
 
-# >-----< INCLUDES >-----< #
+# >----------------< INCLUDES >----------------< #
 
 # [+]: Git files
 !.gitignore
@@ -9,18 +9,18 @@
 !LICENSE.md
 !README.md
 
-# [+]: Configs folder
+# [+]: Source files
+!apps/
+!apps/**
 !configs/
 !configs/**
-
-# [+]: Packages folder
 !packages/
 !packages/**
 
 # [+]: Config files
 !.editorconfig
 
-# >-----< EXCLUDES >-----< #
+# >----------------< EXCLUDES >----------------< #
 
 # [-]: macOS files
 .DS_Store

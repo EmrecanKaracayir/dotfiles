@@ -1,4 +1,4 @@
-# SSH Config Layout
+# SSH Configs
 
 This folder documents a simple SSH config layout.
 

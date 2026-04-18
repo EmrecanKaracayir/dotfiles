@@ -1,4 +1,4 @@
-# Starship Config Layout
+# Starship Configs
 
 This folder documents a simple Starship config layout.
 
