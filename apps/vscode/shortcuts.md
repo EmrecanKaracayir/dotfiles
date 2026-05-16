@@ -6,29 +6,57 @@ This file documents shortcut mappings for Visual Studio Code. The shortcuts are 
 
 > **Note:** Many shortcuts follow a recurring pattern: `IJKL` maps to directional movement, and `X` is used for close or cancel actions. That pattern keeps related shortcuts consistent.
 
-## Quick Shortcuts
+## Table of Contents
 
-Quick shortcuts are direct shortcuts that do not require **Super Key (`△`)** or key chords.
+- [Simple Shortcuts](#simple-shortcuts)
+  - [Common](#common)
+  - [Caret](#caret)
+  - [Editing](#editing)
+  - [Completion](#completion)
+- [Complex Shortcuts](#complex-shortcuts)
+  - [Window (△W)](#window-w)
+  - [File (△F)](#file-f)
+  - [Layout (△L)](#layout-l)
+  - [Tab (△T)](#tab-t)
+  - [Editor (△E)](#editor-e)
+  - [Palette (△P)](#palette-p)
+  - [Search (△S)](#search-s)
+  - [Navigation (△N)](#navigation-n)
+  - [Goto (△G)](#goto-g)
+  - [Observe (△O)](#observe-o)
+  - [Hierarchy (△H)](#hierarchy-h)
+  - [Mod (△M)](#mod-m)
+  - [Actions (△A)](#actions-a)
+  - [Intelligence (△I)](#intelligence-i)
+  - [Version (△V)](#version-v)
+  - [Jobs (△J)](#jobs-j)
+  - [Debug (△D)](#debug-d)
+
+## Simple Shortcuts
+
+Simple shortcuts are direct shortcuts that do not require **Super Key (`△`)** or key chords.
 
 ### Common
 
 This category covers shortcuts commonly shared across apps.
 
-| **Action** | **Mnemonic** | **Shortcut** |
-|:-----------|:-------------|-------------:|
-| Cut        | -            |         `⌘X` |
-| Copy       | `C`opy       |         `⌘C` |
-| Paste      | -            |         `⌘V` |
-| Undo       | -            |         `⌘Z` |
-| Redo       | -            |        `⇧⌘Z` |
-| Select All | `A`ll        |         `⌘A` |
-| Back       | -            |        `MB4` |
-| Forward    | -            |        `MB5` |
-| Save       | `S`ave       |         `⌘S` |
-| Save As    | `S`ave       |        `⇧⌘S` |
-| Settings   | -            |         `⌘,` |
-| Hide       | `H`ide       |         `⌘H` |
-| Quit       | `Q`uit       |         `⌘Q` |
+| **Action**              | **Mnemonic** | **Shortcut** |
+|:------------------------|:-------------|-------------:|
+| Cut                     | -            |         `⌘X` |
+| Copy                    | `C`opy       |         `⌘C` |
+| Paste                   | -            |         `⌘V` |
+| Undo                    | -            |         `⌘Z` |
+| Redo                    | -            |        `⇧⌘Z` |
+| Select All              | `A`ll        |         `⌘A` |
+| Back                    | -            |        `MB4` |
+| Forward                 | -            |        `MB5` |
+| Save                    | `S`ave       |         `⌘S` |
+| Save As                 | `S`ave       |        `⇧⌘S` |
+| Save All                | `S`ave       |        `⌥⌘S` |
+| Save Without Formatting | `S`ave       |        `⌃⌘S` |
+| Settings                | -            |         `⌘,` |
+| Hide                    | `H`ide       |         `⌘H` |
+| Quit                    | `Q`uit       |         `⌘Q` |
 
 ### Caret
 
@@ -53,42 +81,53 @@ This category covers caret management and cursor positioning.
 | Move Caret to Line End           | -            |         `⌘→` |
 | Move Caret to Document Start     | -            |         `⌘↑` |
 | Move Caret to Document End       | -            |         `⌘↓` |
-| Move Caret to Matching Brace     | -            |         `⌘\` |
+| Move Caret to Matching Bracket   | -            |         `⌘\` |
+| Set Selection Anchor             | -            |        `⇧⌘,` |
+| Select From Anchor to Caret      | -            |        `⇧⌘.` |
 
 ### Editing
 
 This category covers general editing operations.
 
-| **Action**                | **Mnemonic** |   **Shortcut** |
-|:--------------------------|:-------------|---------------:|
-| Start Column Selection    | -            | `Middle-Click` |
-| Shrink Selection          | `←`          |          `⇧⌥J` |
-| Expand Selection          | `→`          |          `⇧⌥L` |
-| Duplicate Selection       | `D`uplicate  |           `⌘D` |
-| Fold                      | -            |           `⌘[` |
-| Fold All                  | -            |          `⇧⌘[` |
-| Unfold                    | -            |           `⌘]` |
-| Unfold All                | -            |          `⇧⌘]` |
-| Add Line Below            | -            |           `⌘⏎` |
-| Add Line Above            | -            |          `⇧⌘⏎` |
-| Copy Line Down            | -            |          `⇧⌥↓` |
-| Copy Line Up              | -            |          `⇧⌥↑` |
-| Move Line Down            | -            |           `⌥↓` |
-| Move Line Up              | -            |           `⌥↑` |
-| Delete Previous Character | -            |            `⌫` |
-| Delete Next Character     | -            |           `⇧⌫` |
-| Delete Previous Word      | -            |           `⌥⌫` |
-| Delete Next Word          | -            |          `⇧⌥⌫` |
-| Delete to Line Start      | -            |           `⌘⌫` |
-| Delete to Line End        | -            |          `⇧⌘⌫` |
+| **Action**                              | **Mnemonic** |   **Shortcut** |
+|:----------------------------------------|:-------------|---------------:|
+| Start Column Selection                  | -            | `Middle-Click` |
+| Duplicate Selection                     | `D`uplicate  |           `⌘D` |
+| Shrink Selection                        | `←`          |          `⇧⌥J` |
+| Expand Selection                        | `→`          |          `⇧⌥L` |
+| Select All Occurrences of Selection     | `A`ll        |          `⇧⌥A` |
+| Select Previous Occurrence of Selection | `↑`          |          `⇧⌥I` |
+| Select Next Occurrence of Selection     | `↓`          |          `⇧⌥K` |
+| Fold                                    | -            |           `⌘[` |
+| Fold All                                | -            |          `⇧⌘[` |
+| Fold All Regions                        | -            |          `⌥⌘[` |
+| Unfold                                  | -            |           `⌘]` |
+| Unfold All                              | -            |          `⇧⌘]` |
+| Unfold All Regions                      | -            |          `⌥⌘]` |
+| Add Line Below                          | -            |           `⌘⏎` |
+| Add Line Above                          | -            |          `⇧⌘⏎` |
+| Copy Line Down                          | -            |          `⇧⌥↓` |
+| Copy Line Up                            | -            |          `⇧⌥↑` |
+| Move Line Down                          | -            |           `⌥↓` |
+| Move Line Up                            | -            |           `⌥↑` |
+| Delete Previous Character               | -            |            `⌫` |
+| Delete Next Character                   | -            |           `⇧⌫` |
+| Delete Previous Word                    | -            |           `⌥⌫` |
+| Delete Next Word                        | -            |          `⇧⌥⌫` |
+| Delete to Line Start                    | -            |           `⌘⌫` |
+| Delete to Line End                      | -            |          `⇧⌘⌫` |
+| Delete Bracket Pair                     | -            |          `⌥⌘⌫` |
 
 ### Completion
 
 This category covers editor completion and suggestion commands.
 
-| **Action**         | **Mnemonic** | **Shortcut** |
-|:-------------------|:-------------|-------------:|
-| Trigger Completion | -            |     `⌃Space` |
+| **Action**                      | **Mnemonic** | **Shortcut** |
+|:--------------------------------|:-------------|-------------:|
+| Trigger Completion              | -            |         `⌃␣` |
+| Trigger Inline Completion       | -            |        `⌃⇧␣` |
+| Show Next Inline Completion     | -            |         `⌃⇥` |
+| Show Previous Inline Completion | -            |        `⌃⇧⇥` |
 
 ## Complex Shortcuts
 
@@ -117,31 +156,101 @@ This category covers file and folder commands.
 | New Folder       | `D`irectory  |      `△F △D` |
 | Open...          | `O`pen       |      `△F △O` |
 | Open Recents     | `R`ecents    |      `△F △R` |
-| Reveal in Finder | `F`inder     |      `△F △F` |
+| Reveal in System | `S`ystem     |      `△F △S` |
+| Close Folder     | `X`          |      `△F △X` |
 
-### View (△V)
+### Layout (△L)
 
-This category covers view and panel management.
+This category covers workspace layout, panel visibility, and focus.
 
-| **Action**           | **Mnemonic**    | **Shortcut** |
-|:---------------------|:----------------|-------------:|
-| Toggle Left Panel    | `←`             |      `△V △J` |
-| Toggle Right Panel   | `→`             |      `△V △L` |
-| Toggle Bottom Panel  | `↓`             |      `△V △K` |
-| Focus Editor         | `E`ditor        |      `△V △E` |
-| Focus Explorer       | `F`iles         |      `△V △F` |
-| Focus Search         | `S`earch        |      `△V △S` |
-| Focus Source Control | `V`ersion       |      `△V △V` |
-| Focus Tests          | `U`nit          |      `△V △U` |
-| Focus Run & Debug    | `D`ebug         |      `△V △D` |
-| Focus TODOs          | `W`orklists     |      `△V △W` |
-| Focus Extensions     | `A`dd-ons       |      `△V △A` |
-| Focus Problems       | `P`roblems      |      `△V △P` |
-| Focus Terminal       | `T`erminal      |      `△V △T` |
-| Focus Debug Console  | `M`onitor       |      `△V △M` |
-| Focus Output         | `O`utput        |      `△V △O` |
-| Focus Chat           | `C`hat          |      `△V △C` |
-| Focus Notifications  | `N`otifications |      `△V △N` |
+| **Action**            | **Mnemonic**    | **Shortcut** |
+|:----------------------|:----------------|-------------:|
+| Toggle Left Panel     | `←`             |      `△L △J` |
+| Toggle Right Panel    | `→`             |      `△L △L` |
+| Toggle Bottom Panel   | `↓`             |      `△L △K` |
+| Focus Editor          | `E`ditor        |      `△L △E` |
+| Focus Explorer        | `F`iles         |      `△L △F` |
+| Focus Search          | `S`earch        |      `△L △S` |
+| Focus Version Control | `V`ersion       |      `△L △V` |
+| Focus Tests           | `U`nit          |      `△L △U` |
+| Focus Run & Debug     | `D`ebug         |      `△L △D` |
+| Focus TODOs           | `W`orklists     |      `△L △W` |
+| Focus Extensions      | `A`dd-ons       |      `△L △A` |
+| Focus Problems        | `P`roblems      |      `△L △P` |
+| Focus Terminal        | `T`erminal      |      `△L △T` |
+| Focus Debug Console   | `M`onitor       |      `△L △M` |
+| Focus Output          | `O`utput        |      `△L △O` |
+| Focus Chat            | `C`hat          |      `△L △C` |
+| Focus Notifications   | `N`otifications |      `△L △N` |
+
+### Tab (△T)
+
+This category covers tab management.
+
+| **Action**        | **Mnemonic** | **Shortcut** |
+|:------------------|:-------------|-------------:|
+| New Tab           | `N`ew        |      `△T △N` |
+| Split Tab         | `S`plit      |      `△T △S` |
+| Previous Tab      | `←`          |      `△T △J` |
+| Next Tab          | `→`          |      `△T △L` |
+| Pin Tab           | `P`in        |      `△T △P` |
+| Reopen Closed Tab | `R`eopen     |      `△T △R` |
+| Close Tab         | `X`          |      `△T △X` |
+| Close Other Tabs  | `I`solate    |      `△T △I` |
+
+### Editor (△E)
+
+This category covers editor area controls and presentation settings.
+
+| **Action**         | **Mnemonic** | **Shortcut** |
+|:-------------------|:-------------|-------------:|
+| Increase Font Size | `+`          |      `△E △=` |
+| Decrease Font Size | `-`          |      `△E △-` |
+| Reset Font Size    | `0`          |      `△E △0` |
+
+### Palette (△P)
+
+This category covers command palette entry points and scopes.
+
+| **Action**       | **Mnemonic** | **Shortcut** |
+|:-----------------|:-------------|-------------:|
+| All              | `A`ll        |      `△P △A` |
+| Commands         | `R`un        |      `△P △R` |
+| Agent Sessions   | `C`hats      |      `△P △C` |
+| Search           | `Q`uery      |      `△P △Q` |
+| Files            | `F`iles      |      `△P △F` |
+| Line:Column      | `L`ine       |      `△P △L` |
+| Symbols (Editor) | `S`ymbols    |      `△P △S` |
+| Symbols (Global) | `G`lobals    |      `△P △G` |
+| Editors          | `E`ditors    |      `△P △E` |
+| Browsers         | `B`rowsers   |      `△P △B` |
+| Debug Targets    | `D`ebug      |      `△P △D` |
+| Debug Consoles   | `M`onitors   |      `△P △M` |
+| Tasks            | `J`obs       |      `△P △J` |
+| Terminals        | `T`erminals  |      `△P △T` |
+| Views            | `V`iews      |      `△P △V` |
+| Windows          | `W`indows    |      `△P △W` |
+| History          | `H`istory    |      `△P △H` |
+
+### Search (△S)
+
+This category covers search and replace workflows.
+
+| **Action**                   | **Mnemonic** | **Shortcut** |
+|:-----------------------------|:-------------|-------------:|
+| Find (Editor)                | `F`ind       |      `△S △F` |
+| Find (Global)                | `G`lobal     |      `△S △G` |
+| Find in Editor (Global)      | `E`ditor     |      `△S △E` |
+| Replace (Editor)             | `R`eplace    |      `△S △R` |
+| Replace (Global)             | `C`hange     |      `△S △C` |
+| Toggle Search in Selection   | `I`nside     |      `△S △I` |
+| Toggle Case Sensitive Search | `M`atch      |      `△S △M` |
+| Toggle Regex Search          | `P`attern    |      `△S △P` |
+| Toggle Word Search           | `W`ord       |      `△S △W` |
+| Find Previous                | `←`          |      `△S △J` |
+| Find Next                    | `→`          |      `△S △L` |
+| Select All Occurrences       | `A`ll        |      `△S △A` |
+| Select Next Occurrence       | `N`ext       |      `△S △N` |
 
 ### Navigation (△N)
 
@@ -153,108 +262,12 @@ This category covers navigation between views, locations, and related targets.
 | Navigate to View Right            | `→`           |      `△N △L` |
 | Navigate to View Above            | `↑`           |      `△N △I` |
 | Navigate to View Below            | `↓`           |      `△N △K` |
+| Navigate to Next Symbol           | `S`ymbol      |      `△N △S` |
 | Navigate to Next Change           | `C`hange      |      `△N △C` |
 | Navigate to Next Range            | `R`ange       |      `△N △R` |
 | Navigate to Next Problem (Editor) | `P`roblem     |      `△N △P` |
 | Navigate to Next Problem (Global) | `D`iagnostics |      `△N △D` |
 | Navigate to Next Reference        | `U`sage       |      `△N △U` |
-
-### Tab (△T)
-
-This category covers tab management.
-
-| **Action**        | **Mnemonic** | **Shortcut** |
-|:------------------|:-------------|-------------:|
-| New Tab           | `N`ew        |      `△T △N` |
-| Previous Tab      | `←`          |      `△T △J` |
-| Next Tab          | `→`          |      `△T △L` |
-| Pin Tab           | `P`in        |      `△T △P` |
-| Reopen Closed Tab | `R`eopen     |      `△T △R` |
-| Close Tab         | `X`          |      `△T △X` |
-| Close Other Tabs  | `I`solate    |      `△T △I` |
-
-### Editor (△E)
-
-This category covers editor-level controls.
-
-| **Action**         | **Mnemonic** | **Shortcut** |
-|:-------------------|:-------------|-------------:|
-| Split Editor       | `S`plit      |      `△E △S` |
-| Increase Font Size | `+`          |      `△E △=` |
-| Decrease Font Size | `-`          |      `△E △-` |
-| Reset Font Size    | `0`          |      `△E △0` |
-
-### Palette (△P)
-
-This category covers command palette entry points and scopes.
-
-| **Action**        | **Mnemonic** | **Shortcut** |
-|:------------------|:-------------|-------------:|
-| All               | `A`ll        |      `△P △A` |
-| Commands          | `R`un        |      `△P △R` |
-| Agent Sessions    | `C`hats      |      `△P △C` |
-| Search            | `Q`uery      |      `△P △Q` |
-| Files             | `F`iles      |      `△P △F` |
-| Go to Line:Column | `L`ine       |      `△P △L` |
-| Symbols (Editor)  | `S`ymbols    |      `△P △S` |
-| Symbols (Global)  | `G`lobals    |      `△P △G` |
-| Editors           | `E`ditors    |      `△P △E` |
-| Browsers          | `B`rowsers   |      `△P △B` |
-| Debug Targets     | `D`ebug      |      `△P △D` |
-| Debug Consoles    | `M`onitors   |      `△P △M` |
-| Tasks             | `J`obs       |      `△P △J` |
-| Terminals         | `T`erminals  |      `△P △T` |
-| Views             | `V`iews      |      `△P △V` |
-
-### Intelligence (△I)
-
-This category covers AI-assisted editor workflows.
-
-| **Action**         | **Mnemonic** | **Shortcut** |
-|:-------------------|:-------------|-------------:|
-| Open Quick Chat    | `Q`uick      |      `△I △Q` |
-| Open Inline Chat   | `I`nline     |      `△I △I` |
-| Explain            | `E`xplain    |      `△I △E` |
-| Explain (Terminal) | `T`erminal   |      `△I △T` |
-| Fix                | `F`ix        |      `△I △F` |
-
-### Search (△S)
-
-This category covers search and replace workflows.
-
-| **Action**              | **Mnemonic** | **Shortcut** |
-|:------------------------|:-------------|-------------:|
-| Find (Editor)           | `F`ind       |      `△S △F` |
-| Find (Global)           | `G`lobal     |      `△S △G` |
-| Find In Editor (Global) | `E`ditor     |      `△S △E` |
-| Replace (Editor)        | `R`eplace    |      `△S △R` |
-| Replace (Global)        | `C`hange     |      `△S △C` |
-| Find Previous           | `←`          |      `△S △J` |
-| Find Next               | `→`          |      `△S △L` |
-| Search in Selection     | `I`nside     |      `△S △I` |
-| Select All Occurrences  | `A`ll        |      `△S △A` |
-| Select Occurrence       | `S`elect     |      `△S △S` |
-| Unselect Occurrence     | `U`nselect   |      `△S △U` |
-
-### Mod (△M)
-
-This category covers literal text modifications and editing transforms.
-
-| **Action**                 | **Mnemonic**  | **Shortcut** |
-|:---------------------------|:--------------|-------------:|
-| Comment With Line Comment  | `L`ine        |      `△M △L` |
-| Comment With Block Comment | `B`lock       |      `△M △B` |
-| Transform to Uppercase     | `U`ppercase   |      `△M △U` |
-| Transform to Lowercase     | `M`inuscule   |      `△M △M` |
-| Transform to Title Case    | `T`itle       |      `△M △T` |
-| Transform to Camel Case    | `C`amel       |      `△M △C` |
-| Transform to Pascal Case   | `P`ascal      |      `△M △P` |
-| Transform to Snake Case    | `S`nake       |      `△M △S` |
-| Transform to Kebab Case    | `K`ebab       |      `△M △K` |
-| Join Lines                 | `J`oin        |      `△M △J` |
-| Reverse Lines              | `R`everse     |      `△M △R` |
-| Sort Lines                 | `A`rrange     |      `△M △A` |
-| Delete Duplicate Lines     | `D`eduplicate |      `△M △D` |
 
 ### Goto (△G)
 
@@ -302,27 +315,74 @@ This category covers hierarchical code exploration.
 | Peek Call Hierarchy | `V`oicemail  |      `△H △V` |
 | Peek Type Hierarchy | `F`amily     |      `△H △F` |
 
+### Mod (△M)
+
+This category covers literal text modifications and editing transforms.
+
+| **Action**                 | **Mnemonic**  | **Shortcut** |
+|:---------------------------|:--------------|-------------:|
+| Comment With Line Comment  | `L`ine        |      `△M △L` |
+| Comment With Block Comment | `B`lock       |      `△M △B` |
+| Change All Occurrences     | `O`ccurrences |      `△M △O` |
+| Transform to Uppercase     | `U`ppercase   |      `△M △U` |
+| Transform to Lowercase     | `M`inuscule   |      `△M △M` |
+| Transform to Title Case    | `T`itle       |      `△M △T` |
+| Transform to Camel Case    | `C`amel       |      `△M △C` |
+| Transform to Pascal Case   | `P`ascal      |      `△M △P` |
+| Transform to Snake Case    | `S`nake       |      `△M △S` |
+| Transform to Kebab Case    | `K`ebab       |      `△M △K` |
+| Join Lines                 | `J`oin        |      `△M △J` |
+| Reverse Lines              | `R`everse     |      `△M △R` |
+| Sort Lines                 | `A`rrange     |      `△M △A` |
+| Delete Duplicate Lines     | `D`eduplicate |      `△M △D` |
+
 ### Actions (△A)
 
-This category covers semantic code actions and refactors provided by language tooling.
+This category covers tooling-driven code actions, refactors, and formatting commands.
 
-| **Action**                         | **Mnemonic** | **Shortcut** |
-|:-----------------------------------|:-------------|-------------:|
-| Show Code Actions Menu (Quick Fix) | `C`ode       |      `△A △C` |
-| Show Refactor Menu                 | `R`efactor   |      `△A △R` |
-| Rename                             | `N`ame       |      `△A △N` |
-| Show Source Actions Menu           | `S`ource     |      `△A △S` |
-| Format Document                    | `F`ormat     |      `△A △F` |
-| Format Selection                   | `E`xcerpt    |      `△A △E` |
+| **Action**               | **Mnemonic** | **Shortcut** |
+|:-------------------------|:-------------|-------------:|
+| Show Code Actions Menu   | `C`ode       |      `△A △C` |
+| Auto Fix                 | `F`ix        |      `△A △A` |
+| Show Refactor Menu       | `R`efactor   |      `△A △R` |
+| Rename                   | `N`ame       |      `△A △N` |
+| Show Source Actions Menu | `S`ource     |      `△A △S` |
+| Organize Imports         | `I`mports    |      `△A △I` |
+| Format Document          | `F`ormat     |      `△A △F` |
+| Format Selection         | `E`xcerpt    |      `△A △E` |
 
-### Build (△B)
+### Intelligence (△I)
+
+This category covers AI-assisted editor workflows.
+
+| **Action**         | **Mnemonic** | **Shortcut** |
+|:-------------------|:-------------|-------------:|
+| Open Quick Chat    | `Q`uick      |      `△I △Q` |
+| Open Voice Chat    | `V`oice      |      `△I △V` |
+| Open Inline Chat   | `I`nline     |      `△I △I` |
+| Open Agents Window | `W`indow     |      `△I △W` |
+| Run Prompt File    | `R`un        |      `△I △R` |
+| Explain            | `E`xplain    |      `△I △E` |
+| Fix                | `F`ix        |      `△I △F` |
+
+### Version (△V)
+
+This category covers version control workflows and repository state commands.
+
+| **Action**     | **Mnemonic** | **Shortcut** |
+|:---------------|:-------------|-------------:|
+| Checkout To... | `C`heckout   |      `△V △C` |
+| View Diff      | `D`iff       |      `△V △D` |
+| View Source    | `S`ource     |      `△V △S` |
+
+### Jobs (△J)
 
 This category covers build-task commands.
 
-| **Action**                   | **Mnemonic** | **Shortcut** |
-|:-----------------------------|:-------------|-------------:|
-| Run Build Task               | `B`uild      |      `△B △B` |
-| Configure Default Build Task | `C`onfigure  |      `△B △C` |
+| **Action**     | **Mnemonic** | **Shortcut** |
+|:---------------|:-------------|-------------:|
+| Run Build Task | `B`uild      |      `△J △B` |
+| Run Test Task  | `T`est       |      `△J △T` |
 
 ### Debug (△D)
 
@@ -344,3 +404,18 @@ This category covers debugging session controls.
 | Add Conditional Breakpoint | `S`elective  |      `△D △S` |
 | Add Logpoint               | `N`ote       |      `△D △N` |
 | Edit Breakpoint            | `E`dit       |      `△D △E` |
+
+### Unit (△U)
+
+This category covers unit testing commands.
+
+| **Action**                              | **Mnemonic** | **Shortcut** |
+|:----------------------------------------|:-------------|-------------:|
+| Run Test at Cursor With Coverage        | `R`un        |      `△U △R` |
+| Debug Test at Cursor                    | `D`ebug      |      `△U △D` |
+| Run Tests in Current File With Coverage | `F`ile       |      `△U △F` |
+| Debug Tests in Current File             | `P`aper      |      `△U △P` |
+| Run All Tests With Coverage             | `A`ll        |      `△U △A` |
+| Debug All Tests                         | `L`ab        |      `△U △L` |
+| Toggle Inline Coverage Decorations      | `C`overage   |      `△U △C` |
+| Cancel Test Run                         | `X`          |      `△U △X` |
