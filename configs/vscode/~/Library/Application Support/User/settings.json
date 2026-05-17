@@ -1,0 +1,273 @@
+{
+  // >----------------------------------< Language Specific >-----------------------------------< //
+  /*👥*/ "[json][jsonc][jsonl]": {
+    "editor.codeActionsOnSave": {
+      "source.sort.json": "always"
+    }
+  },
+  /*👥*/ "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeLinkDefinitions": "always"
+    },
+    "editor.wordWrap": "bounded"
+  },
+  // >-----------------------------------------< Chat >-----------------------------------------< //
+  /*👥*/ "chat.unifiedAgentsBar.enabled": true,
+  /*👥*/ "chat.viewSessions.orientation": "stacked",
+  // >------------------------------------< Codemos Modern >------------------------------------< //
+  "codemosModern.dark.accentColor": "#EF6363",
+  "codemosModern.dark.adaptationColor": "#EF6363",
+  "codemosModern.dark.adaptationIntensity": 20,
+  "codemosModern.light.accentColor": "#B70004",
+  "codemosModern.light.adaptationColor": "#B70004",
+  "codemosModern.light.adaptationIntensity": 50,
+  "codemosModern.textDecorations.forComments": [],
+  // >----------------------------------------< Debug >-----------------------------------------< //
+  /*👥*/ "debug.toolBarLocation": "commandCenter",
+  // >---------------------------------------< Editor >-----------------------------------------< //
+  /*👥*/ "diffEditor.experimental.showMoves": true,
+  /*👥*/ "diffEditor.experimental.useTrueInlineView": true,
+  /*👥*/ "diffEditor.hideUnchangedRegions.enabled": true,
+  /*👥*/ "diffEditor.ignoreTrimWhitespace": true,
+  /*👥*/ "diffEditor.renderSideBySide": false,
+  /*👥*/ "editor.cursorBlinking": "smooth",
+  /*👥*/ "editor.cursorSmoothCaretAnimation": "on",
+  /*👥*/ "editor.definitionLinkOpensInPeek": true,
+  /*👥*/ "editor.foldingImportsByDefault": true,
+  /*👥*/ "editor.fontFamily": "'Cascadia Code NF'",
+  /*👥*/ "editor.fontLigatures": true,
+  /*👥*/ "editor.fontSize": 14,
+  /*👥*/ "editor.formatOnSave": true,
+  /*👥*/ "editor.guides.bracketPairs": true,
+  /*👥*/ "editor.guides.bracketPairsHorizontal": false,
+  /*👥*/ "editor.inlayHints.padding": true,
+  /*👥*/ "editor.language.colorizedBracketPairs": [
+    [
+      "{",
+      "}"
+    ]
+  ],
+  /*👥*/ "editor.linkedEditing": true,
+  /*👥*/ "editor.minimap.maxColumn": 80,
+  /*👥*/ "editor.mouseWheelZoom": true,
+  /*👥*/ "editor.renderFinalNewline": "dimmed",
+  /*👥*/ "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    {
+      "column": 100
+    }
+  ],
+  /*👥*/ "editor.scrollbar.verticalScrollbarSize": 12,
+  /*👥*/ "editor.smoothScrolling": true,
+  /*👥*/ "editor.stickyScroll.enabled": false,
+  /*👥*/ "editor.stickyTabStops": true,
+  "editor.wordWrapColumn": 100,
+  // >--------------------------------------< Error Lens >--------------------------------------< //
+  /*👥*/ "errorLens.statusBarIconsAlignment": "right",
+  /*👥*/ "errorLens.statusBarIconsEnabled": true,
+  // >---------------------------------------< Explorer >---------------------------------------< //
+  /*👥*/ "explorer.autoReveal": "focusNoScroll",
+  /*👥*/ "explorer.compactFolders": false,
+  /*👥*/ "explorer.confirmDelete": false,
+  /*👥*/ "explorer.confirmDragAndDrop": false,
+  /*👥*/ "explorer.confirmPasteNative": false,
+  // >----------------------------------------< Files >-----------------------------------------< //
+  /*👥*/ "files.autoSave": "afterDelay",
+  /*👥*/ "files.dialog.defaultPath": "/Users/Emrecan/Developer/",
+  /*👥*/ "files.insertFinalNewline": true,
+  /*👥*/ "files.readonlyFromPermissions": true,
+  /*👥*/ "files.trimFinalNewlines": true,
+  /*👥*/ "files.trimTrailingWhitespace": true,
+  // >-----------------------------------------< Git >------------------------------------------< //
+  /*👥*/ "git.addAICoAuthor": "off",
+  /*👥*/ "git.autofetch": true,
+  /*👥*/ "git.blame.editorDecoration.enabled": true,
+  /*👥*/ "git.blame.statusBarItem.enabled": false,
+  /*👥*/ "git.confirmSync": false,
+  /*👥*/ "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false
+  },
+  // >---------------------------------< Material Icon Theme >----------------------------------< //
+  "material-icon-theme.files.color": "#EF6363",
+  "material-icon-theme.folders.color": "#EF6363",
+  /*👥*/ "material-icon-theme.hidesExplorerArrows": true,
+  // >-----------------------------------------< SCM >------------------------------------------< //
+  /*👥*/ "scm.repositories.explorer": true,
+  /*👥*/ "scm.repositories.selectionMode": "single",
+  // >--------------------------------------< Telemetry >---------------------------------------< //
+  /*👥*/ "telemetry.telemetryLevel": "off",
+  // >---------------------------------------< Terminal >---------------------------------------< //
+  /*👥*/ "terminal.external.osxExec": "Ghostty.app",
+  /*👥*/ "terminal.integrated.cursorBlinking": true,
+  /*👥*/ "terminal.integrated.cursorStyle": "line",
+  /*👥*/ "terminal.integrated.cursorStyleInactive": "line",
+  /*👥*/ "terminal.integrated.cursorWidth": 2,
+  /*👥*/ "terminal.integrated.fontLigatures.enabled": true,
+  /*👥*/ "terminal.integrated.macOptionIsMeta": true,
+  /*👥*/ "terminal.integrated.minimumContrastRatio": 1,
+  /*👥*/ "terminal.integrated.mouseWheelZoom": true,
+  /*👥*/ "terminal.integrated.shellIntegration.environmentReporting": true,
+  /*👥*/ "terminal.integrated.smoothScrolling": true,
+  /*👥*/ "terminal.integrated.stickyScroll.enabled": false,
+  /*👥*/ "terminal.integrated.suggest.showStatusBar": false,
+  // >--------------------------------------< Todo Tree >---------------------------------------< //
+  /*👥*/ "todo-tree.general.showActivityBarBadge": true,
+  /*👥*/ "todo-tree.general.statusBar": "tags",
+  /*👥*/ "todo-tree.general.tags": [
+    "🔴",
+    "🟠",
+    "🟡",
+    "🟢",
+    "🔵"
+  ],
+  /*👥*/ "todo-tree.highlights.backgroundColourScheme": [
+    "#FF4245",
+    "#FF9230",
+    "#FFD600",
+    "#30D158",
+    "#0091FF"
+  ],
+  /*👥*/ "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true,
+    "opacity": 0,
+    "rulerLane": "center",
+    "rulerOpacity": 1,
+    "type": "text-and-comment"
+  },
+  /*👥*/ "todo-tree.highlights.foregroundColourScheme": [
+    "#FF4245",
+    "#FF9230",
+    "#FFD600",
+    "#30D158",
+    "#0091FF"
+  ],
+  /*👥*/ "todo-tree.highlights.useColourScheme": true,
+  /*👥*/ "todo-tree.tree.groupedByTag": true,
+  // >----------------------------------------< Window >----------------------------------------< //
+  /*👥*/ "window.autoDetectColorScheme": true,
+  /*👥*/ "window.newWindowProfile": "Default",
+  // >--------------------------------------< Workbench >---------------------------------------< //
+  /*👥*/ "workbench.editor.empty.hint": "hidden",
+  /*👥*/ "workbench.enableExperiments": false,
+  /*👥*/ "workbench.iconTheme": "material-icon-theme",
+  /*👥*/ "workbench.list.smoothScrolling": true,
+  /*👥*/ "workbench.preferredDarkColorTheme": "Codemos Modern (Dark)",
+  /*👥*/ "workbench.preferredHighContrastColorTheme": "Codemos Modern (Dark)",
+  /*👥*/ "workbench.preferredHighContrastLightColorTheme": "Codemos Modern (Dark)",
+  /*👥*/ "workbench.preferredLightColorTheme": "Codemos Modern (Dark)",
+  /*👥*/ "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.settings.applyToAllProfiles": [
+    // Language Specific
+    "[json][jsonc][jsonl]",
+    "[markdown]",
+    // Chat
+    "chat.unifiedAgentsBar.enabled",
+    "chat.viewSessions.orientation",
+    // Debug
+    "debug.toolBarLocation",
+    // Editor
+    "diffEditor.experimental.showMoves",
+    "diffEditor.experimental.useTrueInlineView",
+    "diffEditor.hideUnchangedRegions.enabled",
+    "diffEditor.ignoreTrimWhitespace",
+    "diffEditor.renderSideBySide",
+    "editor.cursorBlinking",
+    "editor.cursorSmoothCaretAnimation",
+    "editor.definitionLinkOpensInPeek",
+    "editor.foldingImportsByDefault",
+    "editor.fontFamily",
+    "editor.fontLigatures",
+    "editor.fontSize",
+    "editor.formatOnSave",
+    "editor.guides.bracketPairs",
+    "editor.guides.bracketPairsHorizontal",
+    "editor.inlayHints.padding",
+    "editor.language.colorizedBracketPairs",
+    "editor.linkedEditing",
+    "editor.minimap.maxColumn",
+    "editor.mouseWheelZoom",
+    "editor.renderFinalNewline",
+    "editor.renderWhitespace",
+    "editor.scrollbar.verticalScrollbarSize",
+    "editor.smoothScrolling",
+    "editor.stickyScroll.enabled",
+    "editor.stickyTabStops",
+    // Error Lens
+    "errorLens.statusBarIconsAlignment",
+    "errorLens.statusBarIconsEnabled",
+    // Explorer
+    "explorer.autoReveal",
+    "explorer.compactFolders",
+    "explorer.confirmDelete",
+    "explorer.confirmDragAndDrop",
+    "explorer.confirmPasteNative",
+    // Files
+    "files.autoSave",
+    "files.dialog.defaultPath",
+    "files.insertFinalNewline",
+    "files.readonlyFromPermissions",
+    "files.trimFinalNewlines",
+    "files.trimTrailingWhitespace",
+    // Git
+    "git.addAICoAuthor",
+    "git.autofetch",
+    "git.blame.editorDecoration.enabled",
+    "git.blame.statusBarItem.enabled",
+    "git.confirmSync",
+    "github.copilot.enable",
+    // Material Icon Theme
+    "material-icon-theme.hidesExplorerArrows",
+    // SCM
+    "scm.repositories.explorer",
+    "scm.repositories.selectionMode",
+    // Telemetry
+    "telemetry.telemetryLevel",
+    // Terminal
+    "terminal.external.osxExec",
+    "terminal.integrated.cursorBlinking",
+    "terminal.integrated.cursorStyle",
+    "terminal.integrated.cursorStyleInactive",
+    "terminal.integrated.cursorWidth",
+    "terminal.integrated.defaultProfile.osx",
+    "terminal.integrated.fontLigatures.enabled",
+    "terminal.integrated.macOptionIsMeta",
+    "terminal.integrated.minimumContrastRatio",
+    "terminal.integrated.mouseWheelZoom",
+    "terminal.integrated.shellIntegration.environmentReporting",
+    "terminal.integrated.smoothScrolling",
+    "terminal.integrated.stickyScroll.enabled",
+    "terminal.integrated.suggest.showStatusBar",
+    // Todo Tree
+    "todo-tree.general.showActivityBarBadge",
+    "todo-tree.general.statusBar",
+    "todo-tree.general.tags",
+    "todo-tree.highlights.backgroundColourScheme",
+    "todo-tree.highlights.defaultHighlight",
+    "todo-tree.highlights.foregroundColourScheme",
+    "todo-tree.highlights.useColourScheme",
+    "todo-tree.tree.groupedByTag",
+    // Window
+    "window.autoDetectColorScheme",
+    "window.newWindowProfile",
+    // Workbench
+    "workbench.editor.empty.hint",
+    "workbench.iconTheme",
+    "workbench.list.smoothScrolling",
+    "workbench.preferredDarkColorTheme",
+    "workbench.preferredHighContrastColorTheme",
+    "workbench.preferredHighContrastLightColorTheme",
+    "workbench.preferredLightColorTheme",
+    "workbench.secondarySideBar.defaultVisibility",
+    "workbench.startupEditor",
+    "workbench.tips.enabled",
+    "workbench.tree.indent",
+    "workbench.tree.renderIndentGuides"
+  ],
+  /*👥*/ "workbench.startupEditor": "none",
+  /*👥*/ "workbench.tips.enabled": false,
+  /*👥*/ "workbench.tree.indent": 21,
+  /*👥*/ "workbench.tree.renderIndentGuides": "always"
+}

@@ -7,6 +7,7 @@ This folder documents a simple VSCode config layout for macOS.
 VSCode config in this repo is organized as:
 
 - `~/Library/Application Support/Code/User/keybindings.json`
+- `~/Library/Application Support/Code/User/settings.json`
 
 ## What Goes Where
 
@@ -17,6 +18,13 @@ Use this as the user keybinding overrides file.
 - One JSON array of keybinding entries.
 - Each entry has `command`, `key`, and optional `when`.
 - Prefix a `command` with `-` to remove the default binding.
+
+### `settings.json`
+
+Use this for user settings overrides.
+
+- A JSON object with setting keys and values.
+- Override any default setting by specifying it here.
 
 ## Important Note
 
