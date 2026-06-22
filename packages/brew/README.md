@@ -15,7 +15,7 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 - `fzf`
 - `ghq`
 - `git`
-- `kanata`
+- ~~`kanata`~~ (deprecated)
 - `lazygit`
 - `neovim`
 - `node`
@@ -36,6 +36,7 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 - `figma`
 - `font-cascadia-code-nf`
 - `ghostty`
+- `hammerspoon`
 - `hiddenbar`
 - `mac-mouse-fix`
 - `microsoft-excel`

@@ -4,7 +4,7 @@ This folder contains app-specific notes, settings references, and other document
 
 ## Structure
 
-- Each subfolder is named after an app, such as `vscode`.
+- Each subfolder is named after an app, such as `via` or `vscode`.
 - Every app folder should include a README that explains what the folder contains.
 - Depending on the app, a folder can contain shortcut references, settings notes, extension lists, or other app-specific documentation.
 

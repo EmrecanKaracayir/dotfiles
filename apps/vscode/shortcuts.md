@@ -2,7 +2,7 @@
 
 This file documents shortcut mappings for Visual Studio Code. The shortcuts are grouped by action type.
 
-> **Note:** In this file, **Super Key (`△`)** means pressing `⌃⌥⌘` together. With tools like [Kanata](https://github.com/jtroo/kanata), those modifiers can be mapped to a single physical key.
+> **Note:** In this file, **Super Key (`△`)** means pressing `⌃⌥⌘` together. The current Rainy 75 setup emits these shortcuts through VIA plus Hammerspoon.
 
 > **Note:** Many shortcuts follow a recurring pattern: `IJKL` maps to directional movement, and `X` is used for close or cancel actions. That pattern keeps related shortcuts consistent.
 
