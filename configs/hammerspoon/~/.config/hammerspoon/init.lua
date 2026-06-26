@@ -18,7 +18,14 @@ local hyper = {
   isDown = false,
 }
 
-hs.eventtap.new({ types.flagsChanged, types.keyDown, types.keyUp },
+local keyByCode = {}
+for key, code in pairs(keycodes) do
+  if type(code) == "number" then
+    keyByCode[code] = key
+  end
+end
+
+keyboardTap = hs.eventtap.new({ types.flagsChanged, types.keyDown, types.keyUp },
   function(e)
     local eventType = e:getType()
     local keyCode = e:getKeyCode()
@@ -29,12 +36,12 @@ hs.eventtap.new({ types.flagsChanged, types.keyDown, types.keyUp },
       if keyCode == super.keyCode then
         super.isDown = flags.cmd
         return true
-        elseif keyCode == hyper.keyCode then
+      elseif keyCode == hyper.keyCode then
         hyper.isDown = flags.alt
         return true
       end
 
-        return false
+      return false
     end
 
     local modifiers = (hyper.isDown and hyper.modifiers) or (super.isDown and super.modifiers)
@@ -42,7 +49,7 @@ hs.eventtap.new({ types.flagsChanged, types.keyDown, types.keyUp },
       return false
     end
 
-    local keyName = keycodes[keyCode]
+    local keyName = keyByCode[keyCode]
     if eventType == types.keyDown and keyName then
       return true, {
         event.newKeyEvent(modifiers, keyName, true),
@@ -53,6 +60,14 @@ hs.eventtap.new({ types.flagsChanged, types.keyDown, types.keyUp },
     return eventType == types.keyUp
   end
 ):start()
+
+keyboardTapSupervisor = hs.timer.doEvery(10,
+  function()
+    if not keyboardTap:isEnabled() and not hs.eventtap.isSecureInputEnabled() then
+      keyboardTap:start()
+    end
+  end
+)
 
 -- /*------------------------------------------------------------------------------------------*\ --
 -- *|                                       ACTION KEYS                                        |* --
