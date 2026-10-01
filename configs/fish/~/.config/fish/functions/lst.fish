@@ -1,4 +1,4 @@
-function lst --description "List all files in long format with tree view"
+function lst --description "List all files in long format"
     eza --long --hyperlink --all --group-directories-first --header \
-        --octal-permissions --tree $argv
+        --octal-permissions $argv
 end
