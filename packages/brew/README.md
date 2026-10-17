@@ -15,7 +15,7 @@ Formulae are sourced from `brew leaves` and casks from `brew list --cask`.
 - `fzf`
 - `ghq`
 - `git`
-- ~~`kanata`~~ (deprecated)
+- `kanata` (deprecated)
 - `lazygit`
 - `neovim`
 - `starship`

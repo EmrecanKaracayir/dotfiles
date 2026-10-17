@@ -4,6 +4,9 @@ set fish_greeting ""
 # HOMEBREW
 eval (/opt/homebrew/bin/brew shellenv)
 
+# PATHS
+fish_add_path $HOME/.local/bin
+
 # INTERACTIVE
 if status is-interactive
     fish_config theme choose codemos-modern

@@ -18,9 +18,9 @@ Configuration files for tools that read from fixed paths on disk.
 - [configs/fish](configs/fish): Fish shell configuration
 - [configs/ghostty](configs/ghostty): Ghostty terminal configuration
 - [configs/hammerspoon](configs/hammerspoon): Active macOS keyboard automation
-- [configs/git](configs/git): Git configuration
+- [configs/git](configs/git): Git configuration and SSH commit signing
 - [configs/kanata](configs/kanata): Deprecated Kanata keyboard remapper reference
-- [configs/ssh](configs/ssh): SSH client configuration
+- [configs/ssh](configs/ssh): SSH client configuration and public keys
 - [configs/starship](configs/starship): Starship prompt configuration
 
 Most config folders mirror the real filesystem layout by storing files under `~` or another system path used by the tool.

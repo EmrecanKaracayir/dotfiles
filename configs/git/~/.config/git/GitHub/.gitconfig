@@ -1,6 +1,6 @@
 [user]
   email = emrecan@karacayir.com
-  signingKey = ~/.ssh/keys/git/Github/signing_key.pub
+  signingKey = ~/.ssh/keys/git/GitHub/signing_key.pub
 
 [gpg]
   format = ssh

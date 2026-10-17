@@ -25,3 +25,8 @@
 # [-]: macOS files
 .DS_Store
 **/.DS_Store
+
+# [-]: SSH private keys (only public keys are tracked)
+configs/ssh/~/.ssh/keys/**
+!configs/ssh/~/.ssh/keys/**/
+!configs/ssh/~/.ssh/keys/**/*.pub

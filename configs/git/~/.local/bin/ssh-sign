@@ -1,0 +1,7 @@
+#!/opt/homebrew/bin/fish --no-config
+
+if test "$argv[2]" = sign
+    ssh-add --apple-use-keychain (path change-extension '' $argv[6])
+end
+
+exec ssh-keygen $argv
