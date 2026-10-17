@@ -11,7 +11,6 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- Not "catppuccin": Neovim 0.12 ships a built-in colorscheme with that name.
       colorscheme = "catppuccin-nvim",
     },
   },

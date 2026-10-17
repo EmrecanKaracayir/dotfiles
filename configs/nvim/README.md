@@ -30,8 +30,6 @@ Use this to set the theme. Picking one with `<leader>uC` only lasts until Neovim
 - Theme: [catppuccin/nvim](https://github.com/catppuccin/nvim), Latte (light), Macchiato (dark).
 - Follows Ghostty's light or dark background, which Neovim detects on startup.
 - Transparent background, so Ghostty's glass shows through.
-- The colorscheme is `catppuccin-nvim`, not `catppuccin`. Neovim 0.12 ships its own
-  built-in `catppuccin`, which has fewer highlights and ignores the plugin's options.
 
 ## Requirements
 
