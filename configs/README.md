@@ -4,7 +4,7 @@ This folder contains configuration files for core tools.
 
 ## Structure
 
-- Each subfolder is named after the tool it configures, such as `fish`, `ghostty`, `hammerspoon`, `git`, `kanata`, `ssh`, or `starship`.
+- Each subfolder is named after the tool it configures, such as `fish`, `ghostty`, `hammerspoon`, `git`, `kanata`, `nvim`, `ssh`, or `starship`.
 - Files inside each folder usually mirror their real location on disk by keeping the same path under `~`.
 - When a tool also needs system-level files, those paths are stored here too.
 - Helper scripts a tool depends on live in that tool's folder at their real path, such as `git/~/.local/bin/ssh-sign`.

@@ -20,6 +20,7 @@ Configuration files for tools that read from fixed paths on disk.
 - [configs/hammerspoon](configs/hammerspoon): Fallback macOS keyboard automation for Macs where Kanata can't run
 - [configs/git](configs/git): Git configuration and SSH commit signing
 - [configs/kanata](configs/kanata): Primary macOS keyboard automation
+- [configs/nvim](configs/nvim): Neovim configuration (LazyVim)
 - [configs/ssh](configs/ssh): SSH client configuration and public keys
 - [configs/starship](configs/starship): Starship prompt configuration
 
@@ -27,8 +28,9 @@ Most config folders mirror the real filesystem layout by storing files under `~`
 
 ### [packages/](packages)
 
-Installed package lists grouped by package manager.
+Installed package lists grouped by install source and set.
 
+- [packages/app-store](packages/app-store): Mac App Store apps
 - [packages/brew](packages/brew): Homebrew formulae and casks
 
 ## Notes

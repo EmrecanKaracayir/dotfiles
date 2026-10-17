@@ -1,12 +1,24 @@
 # Packages
 
-This folder contains installed package lists grouped by package manager.
+This folder contains installed package lists grouped by where they are installed from.
 
 ## Structure
 
-- Each subfolder is named after a package manager, such as `brew`.
-- The README inside each package-manager folder lists the packages installed through that tool.
+- Each subfolder is named after an install source:
+  - `brew`: Homebrew
+  - `app-store`: Mac App Store
+- Each folder's README lists its packages, with a one-line reason for each.
+
+## Sets
+
+Packages are grouped into sets, so each Mac only gets what it needs.
+
+- `Essential Set`: installed on every Mac.
+- Other sets are added on top based on what the Mac is used for.
+- Examples: `Creator Set`, `Mobile Development Set`, `Web Development Set`.
 
 ## Notes
 
 This folder records installed software rather than configuration files.
+
+Software is installed only through Homebrew or the Mac App Store.
