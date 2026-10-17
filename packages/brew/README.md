@@ -35,6 +35,7 @@ Otherwise, such as on a company Mac, install `hammerspoon` instead.
 - `claude`: Anthropic's desktop app
 - `figma`: UI design tool
 - `font-cascadia-code-nf`: Nerd Font for Ghostty; provides the icons in `eza` and Starship
+- `fork`: Git GUI for history, diffs and interactive rebase
 - `ghostty`: Terminal emulator
 - `google-gemini`: Google's Gemini desktop app
 - `hammerspoon`: Fallback keyboard automation where `kanata` can't run
@@ -42,7 +43,7 @@ Otherwise, such as on a company Mac, install `hammerspoon` instead.
 - `mac-mouse-fix`: Smooth scrolling and extra buttons for third-party mice
 - `monitorcontrol`: Brightness and volume keys for external displays
 - `notion`: Notes and docs
-- `qbittorrent`: BitTorrent client
+- `transmission`: BitTorrent client
 - `visual-studio-code`: Code editor
 
 ## Creator Set

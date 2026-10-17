@@ -12,6 +12,7 @@ Installed on every Mac.
 - `Keynote`: Presentations
 - `Numbers`: Spreadsheets
 - `Pages`: Documents
+- `The Unarchiver`: Opens RAR, 7z and other archives macOS can't
 - `WhatsApp`: WhatsApp desktop app
 - `Wipr`: Safari ad and tracker blocker
 - `Xcode`: Apple's IDE; its toolchains and SDKs are used by everyday developer tools
