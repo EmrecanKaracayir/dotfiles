@@ -1,18 +1,13 @@
 # Kanata Configs
 
-This folder is deprecated for now. It is kept as a reference for the previous Rainy 75 Kanata setup, but the active keyboard setup now uses VIA plus Hammerspoon.
+This folder contains the primary macOS keyboard automation. VIA handles the Rainy 75 firmware layout, and Kanata handles the macOS-level Super, Hyper, and action key shortcuts on top of it.
 
-Kanata is not the active path because on macOS it depends on the Karabiner VirtualHIDDevice system extension. That extension may be unavailable on managed company Macs where system extensions are blocked. Hammerspoon runs in userspace, so it is the current macOS automation layer.
+On macOS, Kanata depends on the Karabiner VirtualHIDDevice system extension and needs `sudo` to install its LaunchDaemons. On Macs where either is blocked, such as managed company Macs, Hammerspoon takes over the same role.
 
-Most Rainy 75 changes now live in the VIA save:
+- VIA save: `apps/via/rainy_75.layout.json`
+- Hammerspoon config: `configs/hammerspoon/~/.config/hammerspoon/init.lua`
 
-- `apps/via/rainy_75.layout.json`
-
-The active Hammerspoon config lives at:
-
-- `configs/hammerspoon/~/.config/hammerspoon/init.lua`
-
-## Historical Main Paths
+## Main Paths
 
 Kanata config in this repo is organized as:
 
@@ -54,8 +49,6 @@ Use this as the LaunchDaemon that activates the VirtualHIDDevice driver.
 - Needed once per boot so the driver is ready before Kanata starts.
 
 ## Important Notes
-
-This setup is historical and should not be used as the default Rainy 75 setup right now.
 
 Kanata on macOS depends on [Karabiner-DriverKit-VirtualHIDDevice](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice). Install it before loading the LaunchDaemons above.
 

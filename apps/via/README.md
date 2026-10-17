@@ -6,14 +6,14 @@ This folder contains VIA layout saves for programmable keyboards.
 
 - `rainy_75.layout.json`: Current Rainy 75 VIA layout save.
 
-## Current Role
+## Role
 
 VIA is the primary place for Rainy 75 keyboard-side changes. The saved layout contains the base keymap, layer keys, edit/navigation layer behavior, media controls, function keys, and other firmware-level mappings.
 
 ## Layout Notes
 
 - Command and Option are arranged for macOS at the firmware level.
-- Caps Lock activates the edit layer directly on the keyboard. This replaces the edit layer that used to live in Kanata.
+- Caps Lock activates the edit layer directly on the keyboard.
 - The top-right key now activates the control layer. It used to be `Home`.
 - Delete sends `F13`.
 - End sends `F14`.
@@ -51,11 +51,11 @@ Caps Lock holds the edit layer. It keeps editing and navigation keys under the l
 | `[` | Escape    |
 | `;` | Enter     |
 
-## Relationship To Hammerspoon
+## Relationship To Kanata And Hammerspoon
 
-Hammerspoon handles the remaining macOS userspace behavior that cannot live cleanly in VIA. The keyboard sends app-facing keys such as `F14`, `F15`, and `F16`; Hammerspoon maps those to close/quit/lock, minimize/hide/desktop, and zoom/fill/fullscreen shortcuts.
+Kanata handles the remaining macOS behavior that cannot live cleanly in VIA. The keyboard sends app-facing keys such as `F14`, `F15`, and `F16`; Kanata maps those to close/quit/lock, minimize/hide/desktop, and zoom/fill/fullscreen shortcuts.
 
-Kanata is deprecated for now.
+On Macs where Kanata can't run, Hammerspoon does the same job.
 
 ## Restore
 

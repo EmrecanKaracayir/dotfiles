@@ -51,14 +51,6 @@ This setup uses conditional includes from `~/.gitconfig` to load profile config 
 
 ## SSH Signing
 
-Commits and tags are signed with an SSH key set by `user.signingKey` in the profile config.
+Git signs with `ssh-keygen`, which can't read passphrases from the macOS Keychain, so every commit asked for the passphrase.
 
-Git signs by running `ssh-keygen -Y sign`. On macOS, `ssh-keygen` cannot read passphrases from the Keychain and does not read `~/.ssh/config`, so `UseKeychain` does not help. It only uses keys already in the agent, and the agent starts empty after every login. Without a helper, every commit asks for the passphrase.
-
-`ssh-sign` fixes this by loading the key from the Keychain on demand. The passphrase must be stored in the Keychain once:
-
-```sh
-ssh-add --apple-use-keychain ~/.ssh/keys/git/GitHub/signing_key
-```
-
-The Keychain is unavailable while the screen is locked, so signing in that state will ask for the passphrase.
+`ssh-sign` fixes this by loading the signing key into the agent with `ssh-add --apple-use-keychain` before signing.

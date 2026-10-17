@@ -1,6 +1,6 @@
 # Hammerspoon Configs
 
-This folder contains the active macOS keyboard automation. Hammerspoon runs in userspace through Accessibility permissions, so it avoids the system extension requirement that currently blocks the Kanata setup on managed Macs.
+This folder contains the fallback macOS keyboard automation, used on Macs where Kanata can't run. Kanata needs a system extension and `sudo`, which managed company Macs may block. Hammerspoon runs in userspace through Accessibility permissions, so it works there.
 
 ## Main Paths
 
@@ -30,9 +30,9 @@ The action keys use modifier variants:
 
 ## Relationship To VIA And Kanata
 
-- VIA is the source of truth for the Rainy 75 firmware layout. Its save lives at `apps/via/rainy_75.layout.json`.
-- Hammerspoon is the active macOS userspace layer for Super, Hyper, and action key shortcuts.
-- Kanata is deprecated for now because its macOS path requires the Karabiner VirtualHIDDevice system extension.
+- VIA handles the Rainy 75 firmware layout. Its save lives at `apps/via/rainy_75.layout.json`.
+- Kanata is the primary layer for Super, Hyper, and action key shortcuts.
+- Hammerspoon does the same job on Macs where Kanata can't run.
 
 ## Install
 

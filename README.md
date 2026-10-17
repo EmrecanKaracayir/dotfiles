@@ -17,9 +17,9 @@ Configuration files for tools that read from fixed paths on disk.
 
 - [configs/fish](configs/fish): Fish shell configuration
 - [configs/ghostty](configs/ghostty): Ghostty terminal configuration
-- [configs/hammerspoon](configs/hammerspoon): Active macOS keyboard automation
+- [configs/hammerspoon](configs/hammerspoon): Fallback macOS keyboard automation for Macs where Kanata can't run
 - [configs/git](configs/git): Git configuration and SSH commit signing
-- [configs/kanata](configs/kanata): Deprecated Kanata keyboard remapper reference
+- [configs/kanata](configs/kanata): Primary macOS keyboard automation
 - [configs/ssh](configs/ssh): SSH client configuration and public keys
 - [configs/starship](configs/starship): Starship prompt configuration
 

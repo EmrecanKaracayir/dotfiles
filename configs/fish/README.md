@@ -11,6 +11,8 @@ Fish reads config from:
 - `~/.config/fish/functions/*.fish`
 - `~/.config/fish/themes/*.theme`
 
+This folder also stores `~/.hushlogin`, which shapes how new shells start.
+
 ## What Goes Where
 
 ### `config.fish`
@@ -41,6 +43,14 @@ Use this folder for Fish prompt/theme files.
 
 - Keep theme files here.
 - Select a theme with `fish_config theme choose ...`.
+
+### `~/.hushlogin`
+
+Use this empty file to silence the login banner.
+
+- When it exists, `login` skips the "Last login" line and the message of the day.
+- Terminals that start shells through `login`, such as Ghostty and Terminal, stop printing it.
+- The file's content does not matter. Only its presence does.
 
 ## Fisher
 
