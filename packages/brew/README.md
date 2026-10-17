@@ -38,11 +38,12 @@ Otherwise, such as on a company Mac, install `hammerspoon` instead.
 - `ghostty`: Terminal emulator
 - `google-gemini`: Google's Gemini desktop app
 - `hammerspoon`: Fallback keyboard automation where `kanata` can't run
+- `iina`: Video player
 - `mac-mouse-fix`: Smooth scrolling and extra buttons for third-party mice
 - `monitorcontrol`: Brightness and volume keys for external displays
 - `notion`: Notes and docs
+- `qbittorrent`: BitTorrent client
 - `visual-studio-code`: Code editor
-- `whatsapp`: WhatsApp desktop app
 
 ## Creator Set
 

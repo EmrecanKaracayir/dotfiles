@@ -12,6 +12,8 @@ Installed on every Mac.
 - `Keynote`: Presentations
 - `Numbers`: Spreadsheets
 - `Pages`: Documents
+- `WhatsApp`: WhatsApp desktop app
+- `Wipr`: Safari ad and tracker blocker
 
 ## Creator Set
 
@@ -23,3 +25,9 @@ Installed on Macs used for writing and content creation.
 - `MainStage`: Live performance with Logic Pro instruments and effects
 - `Motion`: Motion graphics and titles for Final Cut Pro
 - `Pixelmator Pro`: Image editing
+
+## Mobile Development Set
+
+Installed on Macs used for building mobile apps.
+
+- `Xcode`: Apple's IDE and SDKs for iOS and macOS apps

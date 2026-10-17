@@ -21,4 +21,5 @@ Packages are grouped into sets, so each Mac only gets what it needs.
 
 This folder records installed software rather than configuration files.
 
-Software is installed only through Homebrew or the Mac App Store.
+Software is installed only through the Mac App Store or Homebrew.
+The App Store comes first; Homebrew is for software the App Store doesn't have.
