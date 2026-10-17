@@ -5,5 +5,5 @@
 Download the `codemos-modern.theme` directly into your configuration:
 
 ```bash
-curl --output "~/.config/fish/themes/codemos-modern.theme" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/fish/codemos-modern.theme"
+curl --output "$HOME/.config/fish/themes/codemos-modern.theme" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/fish/codemos-modern.theme"
 ```

@@ -4,8 +4,8 @@
 [init]
   defaultBranch = main
 
-[includeIf "gitdir:~/Developer/External/github.com/"]
+[includeIf "gitdir:~/Developer/Projects/External/github.com/"]
   path = ~/.config/git/GitHub/.gitconfig
 
 [ghq]
-  root = ~/Developer/External/
+  root = ~/Developer/Projects/External/

@@ -1,9 +1,6 @@
 [user]
-  email = developer@karacayir.com
-  signingKey = ~/.ssh/keys/ek_git_signing_key.pub
-
-[core]
-  excludesFile = ~/.gitignore_global
+  email = emrecan@karacayir.com
+  signingKey = ~/.ssh/keys/git/Github/signing_key.pub
 
 [gpg]
   format = ssh

@@ -5,9 +5,9 @@
 Download the `Codemos Modern (Dark)` and `Codemos Modern (Light)` directly into your configuration:
 
 ```bash
-curl --output "~/.config/ghostty/themes/Codemos Modern (Dark)" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/ghostty/Codemos%20Modern%20(Dark)"
+curl --output "$HOME/.config/ghostty/themes/Codemos Modern (Light)" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/ghostty/Codemos%20Modern%20(Light)"
 ```
 
 ```bash
-curl --output "~/.config/ghostty/themes/Codemos Modern (Light)" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/ghostty/Codemos%20Modern%20(Light)"
+curl --output "$HOME/.config/ghostty/themes/Codemos Modern (Dark)" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/ghostty/Codemos%20Modern%20(Dark)"
 ```

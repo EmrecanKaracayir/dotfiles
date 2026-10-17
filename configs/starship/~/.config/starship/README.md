@@ -5,9 +5,9 @@
 Download the `codemos-modern-dark.toml` and `codemos-modern-light.toml` directly into your configuration:
 
 ```bash
-curl --output "~/.config/starship/codemos-modern-dark.toml" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/starship/codemos-modern-dark.toml"
+curl --output "$HOME/.config/starship/codemos-modern-light.toml" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/starship/codemos-modern-light.toml"
 ```
 
 ```bash
-curl --output "~/.config/starship/codemos-modern-light.toml" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/starship/codemos-modern-light.toml"
+curl --output "$HOME/.config/starship/codemos-modern-dark.toml" --create-dirs "https://raw.githubusercontent.com/EmrecanKaracayir/Codemos-Modern/refs/heads/main/themes/starship/codemos-modern-dark.toml"
 ```

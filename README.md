@@ -22,7 +22,6 @@ Configuration files for tools that read from fixed paths on disk.
 - [configs/kanata](configs/kanata): Deprecated Kanata keyboard remapper reference
 - [configs/ssh](configs/ssh): SSH client configuration
 - [configs/starship](configs/starship): Starship prompt configuration
-- [configs/vscode](configs/vscode): Visual Studio Code configuration
 
 Most config folders mirror the real filesystem layout by storing files under `~` or another system path used by the tool.
 
