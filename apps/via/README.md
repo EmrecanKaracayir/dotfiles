@@ -28,10 +28,24 @@ The control layer contains keyboard and system controls:
 - Up and down handle brightness up/down.
 - Enter sends play/pause.
 - `+` and `-` send next and previous track.
-- `Esc` sleeps the keyboard.
+- `Esc` toggles RGB on and off.
 - `Space` shows battery level.
-- `WASD` controls RGB.
 - `Tab` switches source.
+
+RGB controls sit in two clusters, one under each hand:
+
+| Key | Output             |
+|:----|:-------------------|
+| `W` | Brightness up      |
+| `S` | Brightness down    |
+| `A` | Hue down           |
+| `D` | Hue up             |
+| `Q` | Saturation down    |
+| `E` | Saturation up      |
+| `I` | Next effect        |
+| `K` | Previous effect    |
+| `J` | Effect speed down  |
+| `L` | Effect speed up    |
 
 ## Edit Layer
 
