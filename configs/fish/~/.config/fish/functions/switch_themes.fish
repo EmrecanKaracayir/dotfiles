@@ -2,7 +2,7 @@ function switch_themes
     set --local CONFIG_PATH {$HOME}/.config
 
     # STARSHIP
-    if which starship > /dev/null 2>&1
+    if which starship >/dev/null 2>&1
         set --local STARSHIP_PATH {$CONFIG_PATH}/starship
 
         if not test -e {$STARSHIP_PATH}/.light
