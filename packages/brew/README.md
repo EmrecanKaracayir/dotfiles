@@ -43,6 +43,7 @@ Otherwise, such as on a company Mac, install `hammerspoon` instead.
 - `mac-mouse-fix`: Smooth scrolling and extra buttons for third-party mice
 - `monitorcontrol`: Brightness and volume keys for external displays
 - `notion`: Notes and docs
+- `tangrid-app`: Window snapping and tiling, plus a window switcher and Dock previews
 - `transmission`: BitTorrent client
 - `visual-studio-code`: Code editor
 
